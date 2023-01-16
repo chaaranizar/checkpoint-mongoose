@@ -6,7 +6,8 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
     try {
             // step 1
-            await mongoose.connect(process.env.DB_URI);
+           mongoose.set('strictQuery', false);
+            await mongoose.connect(process.env.DB_URI, {useNewUrlParser : true});
             // step 2
             console.log("Database connected...");
     } catch (error) {

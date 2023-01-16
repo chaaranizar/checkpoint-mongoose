@@ -1,0 +1,17 @@
+.cards {
+    margin: 10px 10px;
+}
+.cards:hover{
+    box-shadow: 1px 1px 1px 1px aqua, 1px 1px 1px 1px aqua;
+    cursor: pointer;
+}
+.card {
+    background: transparent;
+}
+
+.btn {
+    justify-content: space-around;
+}
+.btn1 {
+    margin-right: 8px;
+}
